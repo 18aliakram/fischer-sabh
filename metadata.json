@@ -1,0 +1,6 @@
+{
+  "name": "Fischer Mobile Detailing",
+  "description": "Professional mobile car detailing in Portage & Kalamazoo, MI with on-demand booking, service catalog, interactive before-and-after showcase, and instant quotes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fischer Mobile Detailing | Portage & Kalamazoo, MI</title>
+  <meta name="description" content="Professional mobile car detailing in Portage & Kalamazoo, MI. Interior, exterior, paint correction, polishing, and ceramic coating delivered to your driveway." />
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            display: ['Sora', 'sans-serif'],
+            mono: ['Space Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #020617;
+      color: #f8fafc;
+    }
+    .clip-before {
+      clip-path: inset(0 50% 0 0);
+      -webkit-clip-path: inset(0 50% 0 0);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-950 text-xs py-2 px-4 border-b border-blue-800/40 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-blue-200">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-medium">Now Booking Spring & Summer Cleanups in Portage &amp; Kalamazoo (25-Mile Radius)</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="tel:2695670009" class="hover:text-cyan-400 transition-colors flex items-center gap-1 font-mono font-bold">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>(269) 567-0009</span>
+        </a>
+        <span class="hidden sm:inline text-slate-600">|</span>
+        <span class="hidden sm:inline text-slate-400">Owner: Aiden Fischer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 sticky top-[33px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Brand -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 via-blue-700 to-slate-900 p-0.5 shadow-lg shadow-blue-500/20">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center border border-blue-400/30">
+              <i data-lucide="sparkles" class="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform"></i>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-['Sora'] font-extrabold text-xl tracking-tight text-white group-hover:text-cyan-400 transition-colors">FISCHER</span>
+              <span class="text-xs px-1.5 py-0.5 rounded bg-blue-600/30 text-cyan-300 font-mono font-bold border border-blue-400/30">PRO</span>
+            </div>
+            <p class="text-[11px] font-mono tracking-wider text-slate-400 uppercase">Mobile Detailing · Portage MI</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#estimator" class="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+            <i data-lucide="calculator" class="w-4 h-4 text-cyan-400"></i>
+            <span>Price Estimator</span>
+          </a>
+          <a href="#services" class="hover:text-cyan-400 transition-colors">Services &amp; Packages</a>
+          <a href="#before-after" class="hover:text-cyan-400 transition-colors">50/50 Results</a>
+          <a href="#gallery" class="hover:text-cyan-400 transition-colors">Driveway Gallery</a>
+          <a href="#about" class="hover:text-cyan-400 transition-colors">About Aiden</a>
+          <a href="#reviews" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+            <span class="text-amber-400">★ 5.0</span>
+            <span>Reviews</span>
+          </a>
+        </nav>
+
+        <!-- Header CTA Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:2695670009" class="px-4 py-2 rounded-xl text-xs font-mono font-bold text-slate-300 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-white transition-all flex items-center gap-1.5">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Call Now</span>
+          </a>
+          <a href="#contact" class="px-4 py-2 rounded-xl text-xs font-mono font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/30 transition-all flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+            <span>Book Driveway Slot</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950 px-4 pt-3 pb-5 space-y-3">
+      <a href="#estimator" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Price Estimator</a>
+      <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Services &amp; Packages</a>
+      <a href="#before-after" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">50/50 Results</a>
+      <a href="#gallery" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Driveway Gallery</a>
+      <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">About Aiden</a>
+      <a href="#reviews" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Google Reviews (5.0 ★)</a>
+      <div class="pt-3 flex flex-col gap-2">
+        <a href="tel:2695670009" class="w-full py-2.5 rounded-xl text-center text-sm font-mono font-bold text-white bg-slate-800 border border-slate-700">Call (269) 567-0009</a>
+        <a href="#contact" class="w-full py-2.5 rounded-xl text-center text-sm font-mono font-bold text-white bg-blue-600">Book Online</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-950 py-16 lg:py-24">
+    <!-- Hero Background Image & Gradient -->
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="/images/hero-ceramic.jpg" alt="Exotic ceramic detailing" class="w-full h-full object-cover object-center opacity-40 scale-105" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold tracking-wider uppercase mb-6 backdrop-blur-md">
+          <i data-lucide="shield-check" class="w-4 h-4 text-cyan-400"></i>
+          <span>Self-Sufficient Mobile Detailing Unit</span>
+        </div>
+
+        <h1 class="font-['Sora'] font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6">
+          Showroom Gloss Delivered Straight To <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Your Driveway</span>.
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8">
+          We bring our own spot-free deionized water, generator power, dual-action polishers, and 7+ year ceramic coatings directly to your home or office in Portage &amp; Kalamazoo. No shop drop-offs, no hassles.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 mb-10">
+          <a href="#estimator" class="px-6 py-3.5 rounded-xl font-mono text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-600/30 transition-all flex items-center gap-2 group">
+            <i data-lucide="calculator" class="w-4 h-4 group-hover:rotate-12 transition-transform"></i>
+            <span>Calculate Instant Estimate</span>
+          </a>
+          <a href="#before-after" class="px-6 py-3.5 rounded-xl font-mono text-sm font-bold text-slate-200 bg-slate-900/90 border border-slate-800 hover:border-slate-700 hover:bg-slate-800 transition-all flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+            <span>See 50/50 Swirl Results</span>
+          </a>
+        </div>
+
+        <!-- Metric Badges -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-800/80">
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-xl font-extrabold text-white font-['Sora']">5.0 ★</div>
+            <div class="text-xs text-slate-400 font-mono">Google Verified</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-xl font-extrabold text-cyan-400 font-['Sora']">100%</div>
+            <div class="text-xs text-slate-400 font-mono">Mobile &amp; Self-Powered</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-xl font-extrabold text-white font-['Sora']">25 Mi</div>
+            <div class="text-xs text-slate-400 font-mono">Service Radius</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+            <div class="text-xl font-extrabold text-blue-400 font-['Sora']">7+ Yr</div>
+            <div class="text-xs text-slate-400 font-mono">Ceramic Durability</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 50/50 Before & After Section -->
+  <section id="before-after" class="py-20 bg-slate-950 text-white relative overflow-hidden border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold tracking-widest uppercase mb-3.5">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Interactive 50/50 Detailing Studio</span>
+        </div>
+        <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+          Real 50/50 Before &amp; After
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Slide or drag the divider to inspect paint swirl elimination, leather steam restoration, wheel brake dust decon, and hydrophobic ceramic gloss.
+        </p>
+
+        <!-- Category Preset Switcher -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-6" id="sliderTabs">
+          <button data-set="paint" class="slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-blue-600 text-white shadow-lg ring-1 ring-blue-400">Paint Polish &amp; Swirls</button>
+          <button data-set="exterior" class="slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-900 text-slate-400 border border-slate-800 hover:text-white">Exterior Ceramic</button>
+          <button data-set="interior" class="slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-900 text-slate-400 border border-slate-800 hover:text-white">Interior Deep Reset</button>
+          <button data-set="wheels" class="slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-900 text-slate-400 border border-slate-800 hover:text-white">Wheels &amp; Calipers</button>
+        </div>
+      </div>
+
+      <!-- Main Slider Viewer -->
+      <div class="max-w-4xl mx-auto">
+        <div id="sliderContainer" class="relative aspect-[4/3] sm:aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-black ring-1 ring-white/15 select-none cursor-ew-resize touch-none">
+          <!-- After Image -->
+          <div class="absolute inset-0 w-full h-full bg-slate-900">
+            <img id="sliderAfterImg" src="/images/5050-paint-after.jpg" alt="After detailing" class="w-full h-full object-cover object-center pointer-events-none" />
+            <div class="absolute top-4 right-4 z-10 px-3 py-1.5 rounded-full bg-blue-600/95 text-white font-mono text-xs font-bold uppercase shadow-xl border border-blue-400/40 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-3 h-3 text-cyan-300"></i>
+              <span id="sliderAfterLabel">AFTER: 50/50 Mirror Gloss</span>
+            </div>
+          </div>
+
+          <!-- Before Image (Clipped) -->
+          <div id="sliderBeforeWrapper" class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none" style="clip-path: inset(0 50% 0 0);">
+            <img id="sliderBeforeImg" src="/images/5050-paint-before.jpg" alt="Before detailing" class="w-full h-full object-cover object-center pointer-events-none" />
+            <div class="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-full bg-slate-950/90 text-slate-200 font-mono text-xs font-bold uppercase shadow-xl border border-slate-700 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span id="sliderBeforeLabel">BEFORE: Swirls &amp; Haze</span>
+            </div>
+          </div>
+
+          <!-- Vertical Handle Bar -->
+          <div id="sliderHandle" class="absolute top-0 bottom-0 z-20 pointer-events-none" style="left: 50%;">
+            <div class="absolute inset-y-0 -left-[1.5px] w-[3px] bg-cyan-400 shadow-[0_0_16px_#38bdf8]"></div>
+            <div class="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-slate-950 text-cyan-400 shadow-2xl flex items-center justify-center border-2 border-cyan-400 ring-4 ring-cyan-400/25">
+              <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
+            </div>
+            <div id="sliderSplitBadge" class="absolute bottom-4 -translate-x-1/2 px-2.5 py-1 rounded-md bg-slate-950/90 border border-cyan-500/40 text-cyan-300 font-mono text-[10px] font-bold uppercase whitespace-nowrap shadow-lg">
+              50% SPLIT
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Quick Controls -->
+        <div class="mt-4 p-4 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="text-xs space-y-1">
+              <div><span class="font-mono text-slate-400">Defect:</span> <span id="sliderDefect" class="font-semibold text-amber-300">Car-Wash Swirls &amp; Micro-Scratches</span></div>
+              <div><span class="font-mono text-slate-400">Correction:</span> <span id="sliderTreatment" class="font-semibold text-cyan-400">2-Stage Compound &amp; High-Gloss Polish</span></div>
+            </div>
+            <div class="flex items-center gap-1.5 self-end sm:self-center">
+              <button onclick="setSliderPercentage(0)" class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">100% After</button>
+              <button onclick="setSliderPercentage(50)" class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-cyan-600 text-white">50 / 50</button>
+              <button onclick="setSliderPercentage(100)" class="px-2.5 py-1 rounded-lg text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">100% Before</button>
+            </div>
+          </div>
+          <div class="pt-2 border-t border-slate-800 flex items-center gap-3">
+            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap">Fine Slider:</span>
+            <input id="sliderRange" type="range" min="0" max="100" value="50" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400" />
+            <span id="sliderRangeValue" class="text-xs font-mono text-cyan-400 font-bold w-12 text-right">50%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instant Price & Package Estimator -->
+  <section id="estimator" class="py-20 bg-slate-900/60 border-t border-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-400 text-xs font-mono font-bold uppercase mb-3.5">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Transparent Pricing</span>
+        </div>
+        <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+          Instant Price Calculator
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Select your vehicle class, service tier, and optional add-ons to see estimated driveway pricing with zero hidden fees.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-slate-950 p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-2xl">
+        <form id="estimatorForm" class="space-y-6" onsubmit="event.preventDefault();">
+          <!-- Step 1: Vehicle Size -->
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-3">1. Select Vehicle Size</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="1.0" class="peer sr-only" checked />
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 peer-checked:border-cyan-400 peer-checked:bg-cyan-950/30 text-center transition-all">
+                  <i data-lucide="car" class="w-6 h-6 mx-auto mb-2 text-cyan-400"></i>
+                  <div class="font-bold text-sm text-white">Sedan / Coupe</div>
+                  <div class="text-[11px] text-slate-400 font-mono">Standard</div>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="1.15" class="peer sr-only" />
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 peer-checked:border-cyan-400 peer-checked:bg-cyan-950/30 text-center transition-all">
+                  <i data-lucide="car-front" class="w-6 h-6 mx-auto mb-2 text-cyan-400"></i>
+                  <div class="font-bold text-sm text-white">Small / Mid SUV</div>
+                  <div class="text-[11px] text-slate-400 font-mono">2-Row Crossover</div>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="1.3" class="peer sr-only" />
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 peer-checked:border-cyan-400 peer-checked:bg-cyan-950/30 text-center transition-all">
+                  <i data-lucide="truck" class="w-6 h-6 mx-auto mb-2 text-cyan-400"></i>
+                  <div class="font-bold text-sm text-white">Truck / Large SUV</div>
+                  <div class="text-[11px] text-slate-400 font-mono">3-Row / Crew Cab</div>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="vehicleSize" value="1.45" class="peer sr-only" />
+                <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/60 peer-checked:border-cyan-400 peer-checked:bg-cyan-950/30 text-center transition-all">
+                  <i data-lucide="bus" class="w-6 h-6 mx-auto mb-2 text-cyan-400"></i>
+                  <div class="font-bold text-sm text-white">Minivan / Heavy</div>
+                  <div class="text-[11px] text-slate-400 font-mono">Max Surface Area</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Primary Package -->
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-3">2. Choose Service or Package</label>
+            <select id="packageSelect" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white font-medium focus:border-cyan-400 focus:outline-none">
+              <option value="200-450" data-min="200" data-max="450" selected>Full Refresh Package (Inside &amp; Out + Sealant) — $200 – $450</option>
+              <option value="160-420" data-min="160" data-max="420">Spring Maintenance Clean (Hand Wash + Vacuum + Undercarriage) — $160 – $420</option>
+              <option value="300-800" data-min="300" data-max="800">Paint Enhancement Package (Clay + Machine Polish) — $300 – $800</option>
+              <option value="900-2000" data-min="900" data-max="2000">Ultimate Ceramic Protection (2-Stage Correction + 7-Yr Ceramic) — $900 – $2,000</option>
+              <option value="60-120" data-min="60" data-max="120">Exterior Hand Wash Only — $60 – $120</option>
+              <option value="160-350" data-min="160" data-max="350">Interior Deep Steam Cleaning Only — $160 – $350</option>
+            </select>
+          </div>
+
+          <!-- Step 3: Add-On Toggles -->
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase tracking-wider text-slate-400 mb-3">3. Optional Add-On Services</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" name="addon" value="50" class="w-4 h-4 rounded text-blue-600 accent-blue-600" />
+                <div class="text-sm"><span class="text-white font-semibold">Engine Bay Detail</span> <span class="text-cyan-400 font-mono text-xs">(+$50)</span></div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" name="addon" value="45" class="w-4 h-4 rounded text-blue-600 accent-blue-600" />
+                <div class="text-sm"><span class="text-white font-semibold">Undercarriage Salt Rinse</span> <span class="text-cyan-400 font-mono text-xs">(+$45)</span></div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" name="addon" value="70" class="w-4 h-4 rounded text-blue-600 accent-blue-600" />
+                <div class="text-sm"><span class="text-white font-semibold">Clay Bar Decontamination</span> <span class="text-cyan-400 font-mono text-xs">(+$70)</span></div>
+              </label>
+              <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" name="addon" value="65" class="w-4 h-4 rounded text-blue-600 accent-blue-600" />
+                <div class="text-sm"><span class="text-white font-semibold">Paint &amp; Glass Sealant</span> <span class="text-cyan-400 font-mono text-xs">(+$65)</span></div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 4: Location -->
+          <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+            <div>
+              <div class="text-sm font-semibold text-white">Outside Portage City Limits?</div>
+              <div class="text-xs text-slate-400">Standard $50 travel surcharge applies for areas beyond Portage (within 25 miles)</div>
+            </div>
+            <input type="checkbox" id="travelFee" class="w-5 h-5 rounded text-blue-600 accent-blue-600" />
+          </div>
+
+          <!-- Estimated Total Box -->
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-blue-950 to-slate-900 border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <div class="text-xs font-mono text-cyan-300 font-bold uppercase tracking-wider">Estimated Driveway Range</div>
+              <div id="estimatedPrice" class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white mt-1">$200 – $450</div>
+              <div class="text-xs text-slate-400 mt-1">Final price confirmed in-person before work begins</div>
+            </div>
+            <a href="#contact" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-mono text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/40 text-center transition-all">
+              Book This Estimate
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Driveway Gallery Section -->
+  <section id="gallery" class="py-20 bg-slate-950 text-white border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold uppercase mb-3.5">
+          <i data-lucide="image" class="w-3.5 h-3.5"></i>
+          <span>Driveway Portfolio</span>
+        </div>
+        <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+          Recent Kalamazoo &amp; Portage Deliveries
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Click any photo to zoom in on mirror reflections, hydrophobic water beading, and sanitized cabins.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-800 cursor-pointer shadow-lg" onclick="openLightbox('/images/hero-ceramic.jpg', 'Hydrophobic Ceramic Shield', 'Extreme water beading and liquid gloss on midnight paint')">
+          <img src="/images/hero-ceramic.jpg" alt="Ceramic coating" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <span class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-blue-600 text-white">Ceramic</span>
+            <div class="text-sm font-bold text-white mt-1">Hydrophobic Shield</div>
+          </div>
+        </div>
+        <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-800 cursor-pointer shadow-lg" onclick="openLightbox('/images/paint-correction.jpg', 'Dual-Action Paint Correction', 'Swirl removal and mirror polish under LED lighting')">
+          <img src="/images/paint-correction.jpg" alt="Paint correction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <span class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-cyan-600 text-white">Paint</span>
+            <div class="text-sm font-bold text-white mt-1">50/50 Swirl Correction</div>
+          </div>
+        </div>
+        <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-800 cursor-pointer shadow-lg" onclick="openLightbox('/images/interior-detail.jpg', 'Cabin Leather Deep Reset', 'Steam extraction and OEM matte satin UV protection')">
+          <img src="/images/interior-detail.jpg" alt="Interior detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <span class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-emerald-600 text-white">Interior</span>
+            <div class="text-sm font-bold text-white mt-1">Cabin Leather Steam Reset</div>
+          </div>
+        </div>
+        <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-800 cursor-pointer shadow-lg" onclick="openLightbox('/images/foam-cannon.jpg', 'Active Snow Foam Pre-Wash', 'Touchless foam lifting abrasive Michigan road grit')">
+          <img src="/images/foam-cannon.jpg" alt="Snow foam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-3 left-3 right-3">
+            <span class="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-indigo-600 text-white">Exterior</span>
+            <div class="text-sm font-bold text-white mt-1">Active Snow Foam Wash</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Aiden Section -->
+  <section id="about" class="py-20 bg-slate-900/40 border-t border-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold uppercase mb-4">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+            <span>Local Craftsmanship</span>
+          </div>
+          <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-6">
+            Meet Aiden Fischer
+          </h2>
+          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              I founded <strong class="text-white">Fischer Mobile Detailing</strong> with a simple goal: provide true high-end automotive care right in your driveway without the overhead, waiting rooms, or inconvenience of brick-and-mortar shops.
+            </p>
+            <p>
+              From salt-crusted Michigan winter daily drivers to exotic weekend cars, every single vehicle is treated with meticulous care using dual-action machine polishers, pH-balanced chemicals, 220°F dry steam extraction, and long-lasting nano ceramic sealants.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-800">
+            <div>
+              <div class="text-xs font-mono text-slate-400">Headquarters</div>
+              <div class="font-bold text-white mt-0.5">Portage, Michigan</div>
+            </div>
+            <div>
+              <div class="text-xs font-mono text-slate-400">Availability</div>
+              <div class="font-bold text-white mt-0.5">7 Days / Wk (Until 8:30 PM)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800 aspect-[4/3]">
+          <img src="/images/about-car.jpg" alt="Aiden detailing vehicle" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-slate-800">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white font-mono">AF</div>
+              <div>
+                <div class="font-bold text-white text-sm">Aiden Fischer</div>
+                <div class="text-xs text-cyan-400 font-mono">Owner &amp; Lead Detailer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews (5.0 Stars) -->
+  <section id="reviews" class="py-20 bg-slate-950 border-t border-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-400 text-xs font-mono font-bold uppercase mb-3.5">
+          <span>★★★★★ 5.0 Star Rating</span>
+        </div>
+        <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+          What Our Clients Say
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Read verified feedback from vehicle owners across Portage, Kalamazoo, and Texas Township.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "Aiden did an unbelievable job on my truck right in my driveway while I worked from home. The paint looks better than the day I bought it, and not having to drop it off at a shop was huge."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 mt-4 flex items-center justify-between text-xs">
+            <div>
+              <div class="font-bold text-white">Marcus K.</div>
+              <div class="text-slate-400 font-mono">Portage, MI · Ford F-150</div>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-blue-600/30 text-cyan-300 font-mono text-[10px]">Full Refresh</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "With two kids and a dog, our SUV was in rough shape. Fischer Mobile Detailing completely brought it back to life. No weird chemical smells, just spotless seats and super clean glass."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 mt-4 flex items-center justify-between text-xs">
+            <div>
+              <div class="font-bold text-white">Sarah D.</div>
+              <div class="text-slate-400 font-mono">Kalamazoo, MI · Honda Pilot</div>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-emerald-600/30 text-emerald-300 font-mono text-[10px]">Interior Steam</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 text-sm">★★★★★</div>
+            <p class="text-slate-300 text-sm italic leading-relaxed">
+              "Had the ceramic coating and paint enhancement done. Aiden’s attention to detail is top notch. The water literally glides off in sheets now. Highly recommend to anyone in Kalamazoo area."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 mt-4 flex items-center justify-between text-xs">
+            <div>
+              <div class="font-bold text-white">Tyler R.</div>
+              <div class="text-slate-400 font-mono">Texas Township, MI · BMW M340i</div>
+            </div>
+            <span class="px-2 py-0.5 rounded bg-indigo-600/30 text-indigo-300 font-mono text-[10px]">Ceramic 7-Yr</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking & Contact Section -->
+  <section id="contact" class="py-20 bg-slate-900/80 border-t border-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-xs font-mono font-bold uppercase mb-3.5">
+          <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+          <span>Direct Scheduling</span>
+        </div>
+        <h2 class="font-['Sora'] font-extrabold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+          Book Your Driveway Detailing Slot
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          Fill out the form below, call directly, or open our official Jotform booking portal.
+        </p>
+      </div>
+
+      <div class="max-w-xl mx-auto p-6 sm:p-8 rounded-3xl bg-slate-950 border border-slate-800 shadow-2xl space-y-4">
+        <form id="contactForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-400 uppercase mb-1">Your Full Name</label>
+            <input type="text" id="custName" required placeholder="Marcus Vance" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:border-cyan-400 focus:outline-none text-sm" />
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-mono text-slate-400 uppercase mb-1">Phone Number</label>
+              <input type="tel" id="custPhone" required placeholder="(269) 555-0199" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:border-cyan-400 focus:outline-none text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-mono text-slate-400 uppercase mb-1">City / Location</label>
+              <input type="text" id="custCity" required placeholder="Portage / Kalamazoo" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:border-cyan-400 focus:outline-none text-sm" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-400 uppercase mb-1">Vehicle Make / Model &amp; Year</label>
+            <input type="text" id="custVehicle" required placeholder="e.g. 2023 Ford F-150 Black" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:border-cyan-400 focus:outline-none text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-400 uppercase mb-1">Desired Service or Notes</label>
+            <textarea id="custNotes" rows="3" placeholder="Preferred dates, pet hair condition, or ceramic request..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:border-cyan-400 focus:outline-none text-sm"></textarea>
+          </div>
+          <button type="submit" class="w-full py-4 rounded-xl font-mono text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-600/40 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Submit Appointment Request</span>
+          </button>
+        </form>
+
+        <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+          <a href="tel:2695670009" class="hover:text-cyan-400 flex items-center gap-1 font-mono">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Direct Call: (269) 567-0009</span>
+          </a>
+          <a href="https://form.jotform.com/253017411660043" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline flex items-center gap-1">
+            <span>Open Official Jotform Form ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="font-['Sora'] font-extrabold text-lg text-white">FISCHER MOBILE DETAILING</div>
+        <p class="mt-1 text-slate-400">Serving Portage, Kalamazoo, Texas Township, Oshtemo &amp; surrounding MI communities.</p>
+        <p class="mt-1 font-mono text-slate-500">Owner: Aiden Fischer · Fischermobiledetail@gmail.com</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:2695670009" class="px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-white font-mono hover:text-cyan-400">Call (269) 567-0009</a>
+        <a href="#hero" class="px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-white font-mono hover:text-cyan-400">↑ Back To Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full bg-slate-950 rounded-2xl overflow-hidden border border-slate-800" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-slate-900 text-white flex items-center justify-center border border-slate-700">✕</button>
+      <img id="lightboxImg" src="" alt="Zoomed view" class="w-full max-h-[70vh] object-contain bg-black" />
+      <div class="p-4">
+        <h3 id="lightboxTitle" class="font-bold text-white text-lg"></h3>
+        <p id="lightboxSubtitle" class="text-sm text-slate-400 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 50/50 Comparison Slider Data & Controller
+    const comparisonSets = {
+      paint: {
+        beforeImg: '/images/5050-paint-before.jpg',
+        afterImg: '/images/5050-paint-after.jpg',
+        beforeLabel: 'BEFORE: Swirls & Haze',
+        afterLabel: 'AFTER: 50/50 Mirror Gloss',
+        defect: 'Car-Wash Swirls & Micro-Scratches',
+        treatment: '2-Stage Compound & High-Gloss Polish'
+      },
+      exterior: {
+        beforeImg: '/images/5050-exterior-before.jpg',
+        afterImg: '/images/5050-exterior-after.jpg',
+        beforeLabel: 'BEFORE: Road Grime & Salt',
+        afterLabel: 'AFTER: Hydrophobic Ceramic Shield',
+        defect: 'Winter Road Salt & Grime Film',
+        treatment: 'Foam Pre-Wash + Decon + Ceramic Seal'
+      },
+      interior: {
+        beforeImg: '/images/5050-interior-before.jpg',
+        afterImg: '/images/5050-interior-after.jpg',
+        beforeLabel: 'BEFORE: Dust, Stains & Worn Sheen',
+        afterLabel: 'AFTER: Matte Satin OEM Conditioned',
+        defect: 'Embedded Dirt & Sticky Cup Holders',
+        treatment: '220°F Dry Steam & pH-Balanced Extraction'
+      },
+      wheels: {
+        beforeImg: '/images/5050-wheels-before.jpg',
+        afterImg: '/images/5050-wheels-after.jpg',
+        beforeLabel: 'BEFORE: Baked-On Brake Dust',
+        afterLabel: 'AFTER: Ultra-Clean Ceramic Barrier',
+        defect: 'Corrosive Metallic Brake Dust',
+        treatment: 'Acid-Free Chemical Reaction + Ceramic'
+      }
+    };
+
+    let currentPercentage = 50;
+    const container = document.getElementById('sliderContainer');
+    const beforeWrapper = document.getElementById('sliderBeforeWrapper');
+    const handle = document.getElementById('sliderHandle');
+    const splitBadge = document.getElementById('sliderSplitBadge');
+    const rangeInput = document.getElementById('sliderRange');
+    const rangeValue = document.getElementById('sliderRangeValue');
+
+    function setSliderPercentage(pct) {
+      currentPercentage = Math.max(0, Math.min(100, pct));
+      beforeWrapper.style.clipPath = `inset(0 ${100 - currentPercentage}% 0 0)`;
+      handle.style.left = `${currentPercentage}%`;
+      splitBadge.textContent = `${Math.round(currentPercentage)}% SPLIT`;
+      rangeInput.value = currentPercentage;
+      rangeValue.textContent = `${Math.round(currentPercentage)}%`;
+    }
+
+    rangeInput.addEventListener('input', (e) => {
+      setSliderPercentage(Number(e.target.value));
+    });
+
+    let isDragging = false;
+    function updateDrag(clientX) {
+      const rect = container.getBoundingClientRect();
+      const x = clientX - rect.left;
+      const pct = (x / rect.width) * 100;
+      setSliderPercentage(pct);
+    }
+
+    container.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      container.setPointerCapture(e.pointerId);
+      updateDrag(e.clientX);
+    });
+    container.addEventListener('pointermove', (e) => {
+      if (isDragging) updateDrag(e.clientX);
+    });
+    container.addEventListener('pointerup', (e) => {
+      isDragging = false;
+    });
+    container.addEventListener('pointercancel', (e) => {
+      isDragging = false;
+    });
+
+    // Preset Switching
+    const tabButtons = document.querySelectorAll('.slider-tab');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const setKey = btn.getAttribute('data-set');
+        const data = comparisonSets[setKey];
+        if (!data) return;
+
+        tabButtons.forEach(b => {
+          b.className = 'slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-900 text-slate-400 border border-slate-800 hover:text-white';
+        });
+        btn.className = 'slider-tab px-4 py-2 rounded-xl text-xs font-mono font-bold bg-blue-600 text-white shadow-lg ring-1 ring-blue-400';
+
+        document.getElementById('sliderBeforeImg').src = data.beforeImg;
+        document.getElementById('sliderAfterImg').src = data.afterImg;
+        document.getElementById('sliderBeforeLabel').textContent = data.beforeLabel;
+        document.getElementById('sliderAfterLabel').textContent = data.afterLabel;
+        document.getElementById('sliderDefect').textContent = data.defect;
+        document.getElementById('sliderTreatment').textContent = data.treatment;
+
+        setSliderPercentage(50);
+      });
+    });
+
+    // Price Estimator Logic
+    const estForm = document.getElementById('estimatorForm');
+    const pkgSelect = document.getElementById('packageSelect');
+    const travelCheck = document.getElementById('travelFee');
+    const estPriceDisplay = document.getElementById('estimatedPrice');
+
+    function calculateEstimate() {
+      const sizeMultiplier = Number(document.querySelector('input[name="vehicleSize"]:checked').value);
+      const selectedOption = pkgSelect.options[pkgSelect.selectedIndex];
+      let min = Number(selectedOption.getAttribute('data-min'));
+      let max = Number(selectedOption.getAttribute('data-max'));
+
+      let addonTotal = 0;
+      document.querySelectorAll('input[name="addon"]:checked').forEach(cb => {
+        addonTotal += Number(cb.value);
+      });
+
+      const travelFee = travelCheck.checked ? 50 : 0;
+
+      const calcMin = Math.round(min * sizeMultiplier + addonTotal + travelFee);
+      const calcMax = Math.round(max * sizeMultiplier + addonTotal + travelFee);
+
+      estPriceDisplay.textContent = `$${calcMin} – $${calcMax}`;
+    }
+
+    estForm.addEventListener('change', calculateEstimate);
+
+    // Lightbox Controls
+    function openLightbox(src, title, sub) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxTitle').textContent = title;
+      document.getElementById('lightboxSubtitle').textContent = sub;
+      document.getElementById('lightboxModal').classList.remove('hidden');
+    }
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+    }
+
+    // Booking Submission Feedback
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const vehicle = document.getElementById('custVehicle').value;
+
+      alert(`Thank you, ${name}! Your detailing appointment request for your ${vehicle} has been noted. Aiden Fischer will call/text ${phone} within 1-2 hours to confirm your driveway slot.`);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
